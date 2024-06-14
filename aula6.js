@@ -1,0 +1,28 @@
+const div = document.querySelector('div');
+const divPosition = div.getBoundingClientRect();
+console.log(divPosition);
+
+//const botao = document.querySelectorAll("button[data-moverPara='cima']");
+const botoes = document.querySelectorAll("button");
+botoes.forEach(function(button){
+    // const pixelMovido = button.dataset.pixel;
+    // const direcao = button.dataset.mover_para;
+      const {pixel, mover_para:direcao} = button.dataset;
+      button.addEventListener('click', function(){
+      //console.log('Moveu ' + pixel  + ' para: ' + direcao);
+      console.log(`Moveu ${pixel} para ${direcao}`);
+      if (direcao == 'direita'){
+        const leftAtual = divPosition.left + (+pixel);
+        console.log(leftAtual);
+        div.style.left = `${leftAtual}px`;
+  
+      }
+    })
+});
+
+div.style.backgroundColor = 'green';
+div.style.position = 'relative';
+// div.style.top = '150px';
+console.log(div.style);
+
+console.log(divPosition);

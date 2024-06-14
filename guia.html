@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Guia de Estudos</title>
+</head>
+<body>
+  <h2> Guia de Estudos JavaScript </h2>
+  <p> 
+    Professor: <b> Leonardo Antony </b> <br>
+    Datas: <br>
+    04/06/2024, 05/06/2024, 07/06/2024
+  </p>
+
+<p> <b>Indice </b> </p>
+<p> 
+ Live Serer <br>  
+ Variaveis <br>
+ Tipos de Dados <br>
+ Operadores <br>
+ Condicionais <br>
+ Funções <br>
+ Objetos <br>
+</p> 
+
+<h2> Live Server </h2>
+<p> Usae a extensão Live Server para ver as mudanças automaticamente </p>
+<p><img src="img/live01.png"> </p>
+<hr>
+
+<h2> Variáveis </h2>
+<p>
+  var = tem um escopo global <br> 
+  let = tem um escopo local <br> 
+  const = constante, (mas usado junto com funcao pemite ser alterada) <br>
+</p>  
+
+
+<h2>Tipos de Dados </h2>
+<p> 
+  string
+</p>
+
+<p>  inteiro <br>
+  const idade = 0;
+</p>
+
+<p>  
+  boleano <br>
+</p>
+
+
+<p> 
+  lista <br>
+  const lista = [];  // repage na colchetes <br>
+  const herois = ["batman", "flash", "venon"]; <br>
+  // let por causa do escopo <br>
+  for (let i=0; i<=2; i++){ <br>
+  console.log(herois[i]); <br>
+} <br>
+</p>
+
+<p> Percorre uma lista, usa uma função anônima para recolher os dados </p>
+<pre>
+herois.forEach(function(item, index, list){
+  // console.log(item, index, list);
+  console.log(item.toUpperCase());
+  // console.log(herois)
+})
+</pre>
+
+<pre>
+herois.push("hulk");
+herois.shift();
+herois.pop();
+herois.unshift("arlequina");
+console.log(herois);
+</pre>
+
+<p> objeto <br>
+  const objeto = {}; // repare nas chaves
+</p>
+
+<p> tipo das variáveis </p> 
+<p> console.log(typeof idade); </p>
+
+<hr>
+
+<h2> Operadores </h2>
+<p> 
+  +, -, /, * <br>
+  exponenciação: exemplo: 3%4 <br>
+  console.log(2**2); // elevado a 2  <br>
+  console.log(3%2); // resto da divisao <br>
+</p>
+
+<p>
+  Condicionais <br>
+  ==, !=, ===, !== <br>
+  &&, ||, ! <br>
+</p>
+
+<pre>
+let um = 0;
+let dois = 0;
+if (um || dois){
+  console.log("verdadeiro")
+}else{
+  console.log("false")
+}
+</pre>
+
+<p> ternario </p>
+<pre>
+const maiorDeIdade = (idade > 18) ? "maior" : "menor";
+let style = (valorNota >=7) ? 'aprovado' : 'reprovado';
+</pre>
+
+<hr>
+
+<h2> Funções </h2>
+  
+<pre>
+  function areaQuadrado(lado){
+    return lado * lado;
+  }
+</pre>
+
+<pre>
+  function media(nota1, nota2 = 5){
+    return (nota1 + nota2) / 2;
+  }  
+
+  console.log('media',media(3));  
+</pre>
+
+<p> Arraw Function </p>
+
+<pre>
+const usuario = {
+  nome: "aldo",
+  idade: 40,
+  profissao: {},
+  apresentacao: () => {
+    return `Meu nome é ${usuario.nome}`;
+  },
+}
+</pre>
+
+<pre>
+const funcaoSemNome = () => {
+  console.log("essa funcao nao tem nome");
+}
+
+funcaoSemNome();
+</pre>
+
+
+<h2> Objetos </h2>
+<p> 
+  Objetos podem ser acessaods os seus atributos 
+</p>
+<pre>
+const animal = {
+  nome: "gato",
+  tipo: "felino",
+  miar: function(){ return "miau"; },
+}
+</pre>
+
+<h2> Selecionar </h2>
+
+
+const p = documento.qyerySelect('#JAVASCRIPT');
+p.innerText = "mundo JS";
+
+
+<p> pegar o por id ( # ) </p>
+
+<pre>
+const p = documento.qyerySelect('#JAVASCRIPT'); 
+const botoes = document.querySelectorAll('#nota table button');
+p.innerText = "mundo JS";
+</pre>
+
+<p> pegar por tag </p>
+<pre>
+	// um elemento
+	const b = document.querySelectorAll('p');
+	// pega pela clase
+	const c = document.querySelectorAll('.p');
+</pre>
+
+<p> Pegar uma classe específica </p>
+<pre>
+// console.log(p.classList);
+// atribuir uma classe a um elemento
+p.classList.add('negrito');
+</pre>
+
+<pre>
+// converter uma string em maiúsculas.
+// a função é chamada primeiro e criada depois ! 
+let especial = Maior("grau");
+console.log(especial);
+function Maior(s){
+   const s2 = s.toUpperCase();
+   return s2;
+};
+</pre>
+
+<pre>
+// procuar a letra digitada dentro da pelavra sorteada 
+function acharLetra(digitada='', palavra=''){
+    let numero_de_acerto = 0;
+        palavra.split('').forEach((item)=>{
+        //console.log("item: ", item);
+        //console.log("digitada: ", digitada);
+        //if (item == digitada){ numero_de_acerto = 1; };
+    });
+    console.log(palavra.includes(digitada));
+    
+    //return numero_de_acerto;
+    //console.log("acerto:", numero_de_acerto);
+    // opção 2 = quebar a string..
+};
+
+
+// procuar a letra digitada dentro da pelavra sorteada 
+function acharLetra(digitada='', palavra=''){
+        palavra.split('').forEach((item)=>{
+    });
+  return palavra.includes(digitada);
+};
+
+// procuar a letra digitada dentro da pelavra sorteada 
+function acharLetra(digitada='', palavra=''){
+        palavra.split('').forEach((item)=>{
+    });
+  return palavra.includes(digitada);
+};
+
+
+// let word = "Recife";
+// let uno = word[0];
+// console.log("uno: ", uno);
+
+
+
+
+
+function init(){
+  palavraChave = sortearPalavra();
+  forca.setAttribute("src",`src/img/toy0.png`);  
+  verEscolhido.innerText = ""; 
+  //
+  document.body.addEventListener("keydown",(event)=>{
+    const tecla = event.key.toUpperCase();
+    verEscolhido.innerText += `${tecla},`;
+    if (palavraChave.includes(tecla)){
+        exibirAcerto();
+    }else{
+        exibirErro();
+    };
+});
+// local das letras certas
+  let tr = document.querySelector('tr');
+  palavraChave.split('').forEach((item)=>{
+    tr.innerHTML += `<td id="p1"><h1> _${item.toUpperCase()}_ </h1> </td>`;
+  });
+  
+  //
+};
+</pre>
+
+<script src="guia.js" type="module"> </script>
+
+</body>
+</html>
