@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Estudo do Java Script </title>
+</head>
+<body>
+
+<h1> Selecionar Elementos </h1>  
+<p> Exibir no console log o conteúdo </p>
+
+<h2> Selecionar tudo que for H3</h2>
+<h3> Minha Sorte </h3>
+<p id="resp1"> Resp1 = </p>
+<hr>
+
+<h2> Selecionar o que tiver id="grau" </h2>
+<h3 id="grau"> G Tecnico </h3>
+<p id="resp2"> .... </p>
+<hr>
+
+<h2> Selecionar por uma classe </h2>
+<h5 class="gibi"> Liga da Justiça </h5>
+
+<h2> Selecionar por Dataset </h2>
+
+
+  <script>
+  const marca = document.querySelector('#grau'); 
+  console.log("Marca = " + marca.textContent);
+  const r2 =    document.querySelector("#resp2");
+  r2.innerText = "O conteúdo é: " + marca.textContent;
+</script>
+
+
+
+
+  
+
+</body>
+</html>

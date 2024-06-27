@@ -39,28 +39,23 @@
 
 
 <h2>Tipos de Dados </h2>
-<p> 
-  string
-</p>
+<ul> 
+  <li> string; </li>
+  <li> number, </li>
+  <li> boolean, </li> 
+  <li> lista (array), </li>
+  <li> Objevto, </li>
+</ul>
 
-<p>  inteiro <br>
-  const idade = 0;
-</p>
-
-<p>  
-  boleano <br>
-</p>
-
-
-<p> 
-  lista <br>
-  const lista = [];  // repage na colchetes <br>
-  const herois = ["batman", "flash", "venon"]; <br>
-  // let por causa do escopo <br>
-  for (let i=0; i<=2; i++){ <br>
-  console.log(herois[i]); <br>
-} <br>
-</p>
+<h3> lista </h3>
+<pre>  
+  const lista = [];  // repage na colchetes 
+  const herois = ["batman", "flash", "venon"]; 
+  // let por causa do escopo 
+  for (let i=0; i<=2; i++){ 
+      console.log(herois[i]); <br>
+};
+</pre>
 
 <p> Percorre uma lista, usa uma função anônima para recolher os dados </p>
 <pre>
@@ -71,6 +66,7 @@ herois.forEach(function(item, index, list){
 })
 </pre>
 
+<p> Métodos com array </p>
 <pre>
 herois.push("hulk");
 herois.shift();
@@ -79,9 +75,12 @@ herois.unshift("arlequina");
 console.log(herois);
 </pre>
 
-<p> objeto <br>
+<h3> objeto </h3>
+<pre>
   const objeto = {}; // repare nas chaves
-</p>
+  ex:
+  let pessoa = {nome: "aldo", idade: 90 };
+</pre>
 
 <p> tipo das variáveis </p> 
 <p> console.log(typeof idade); </p>
