@@ -43,6 +43,7 @@ herois.push("hulk");
 herois.shift();
 herois.pop();
 herois.unshift("arlequina");
+herois.
 console.log(herois);
 
 

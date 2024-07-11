@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title> Estudo do Javascript </title>
+</head>
+<body>
+<h1> Javascript </h1>
+<h2> Meu Guia Pessoal </h2>
+<h3> Atualizado em 2024-07-09 </h3>
+
+node studio
+hora de codar
+cfc cursos
+
+<p> 
+Ultima aula vista: <br>
+# 12 - Modulo 2 - variaveis - Site B7<br>
+</p>
+
+<h2> Índice </h2>
+
+<p><a href="#switch"> Switch </a></p>
+<p><a href="#funcoes"> Funções </a></p>
+<p><a href="#arrow"> Arrow Function </a></p>
+<p><a href="#array"> Array </a></p>
+
+
+<a name="switch"></a>
+<h3> switch </h3>
+<p> exemplo 1 </p>
+<pre>
+	switch (marca){
+	case 1: console.log("marca1"); break;
+	case 2: console.log("marca2"); break;
+	case 3: console.log("marca3"); break;
+	default: console.log("multi marcas"); break;
+	}
+</pre>
+
+<p> exemplo 2 </p>
+<pre>
+	switch (fator){
+		case 1: 
+		default:
+			preco = 10; 
+			break;
+		case 2: 
+			preco = 10 * 2; 
+			break;
+		case 3: 
+			preco = 10 * 3; 
+			break;
+	}
+	return preco;
+</pre>
+
+<a name="funcoes"></a>
+<h3> Funções </h3>
+<p> 
+	Definição: Trecho de código que é executádo de forma independente <br>
+	Padrão: camelCase <br>
+	Podem ter parâmetros <br>
+	Use "tamplate string", ex: `${vnome} ${vsobrenome}`;  // obs: dentro de `crase` <br>
+	"return" deve ser a última coisa escrita em uma funçao. Depois desta palavara, nada é executado <br> 
+</p>
+
+<a name="arrow"></a>
+<h3> Arrow Function </h3>
+<p> xemplo de uma função normal </p>
+<pre>
+	function somar(x, y){
+	 return x + y;
+	};
+</pre>
+
+<p> I exemplo de uma arrow function </p>
+<pre>
+const somar = (x, y) => {
+	return x + y;
+};
+
+//   --   () => {}
+</pre>
+
+<p> II Outros Exemplos </p>
+<pre>
+	const somar = (x, y) => x + y;
+</pre>
+
+<p> chamada será: console.log(somar(10,5)); </p>
+
+<p> III - Função com um único parâmetro em uma funica linha </p>
+<pre>
+const sobrenome = (sobre) => 'Aldo ' + sobre; 
+-- outro exemplo -- (testado)
+const grande = (str) => str.toUpperCase();
+-- 
+const grande = str => str.toUpperCase();
+
+console.log(grande('aldo')); // retorno ALDO
+</pre>
+
+<a name="array"></a>
+<h3> Array </h3>
+<p> Exemplo de uso </p>
+<pre>
+	exemplo:
+	let colors = ['red', 'blue', 'green'];
+	console.log(colors[0]);
+</pre>
+
+<p> Array dentro de array </p>
+<pre>
+	// array dentro de array
+	let lista = ['recife', ['xx', 'yy']];
+  // exibir o xx
+	console.log(lista[1][0]);
+</pre>
+
+<p>
+	<i> Inserir um novo ítem ao array </i> <br>
+	lista.push('bezerros');
+</p>
+<p>
+// remove o primeiro ítem de um array <br>
+lista.shift(lista);
+</p>
+
+<p>
+// remove o item do array <br>
+lista.pop(); 
+</p>
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+exemplo: <br>
+<pre>
+script...
+  const marca = document.querySelector('#grau'); 
+  console.log("Marca = " + marca.textContent);
+  const r2 =    document.querySelector("#resp2");
+  r2.innerText = "O conteúdo é: " + marca.textContent;
+/script
+</pre>
+
+
+</body>
+</html>
