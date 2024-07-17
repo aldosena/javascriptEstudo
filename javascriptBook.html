@@ -17,7 +17,7 @@ cfc cursos
 
 <p> 
 Ultima aula vista: <br>
-# 12 - Modulo 2 - variaveis - Site B7<br>
+# 17 - Modulo 2 - (objetos) - Site B7<br>
 </p>
 
 <h2> Índice </h2>
@@ -26,6 +26,7 @@ Ultima aula vista: <br>
 <p><a href="#funcoes"> Funções </a></p>
 <p><a href="#arrow"> Arrow Function </a></p>
 <p><a href="#array"> Array </a></p>
+<p><a href="#objetos"> Objetos </a></p>
 
 
 <a name="switch"></a>
@@ -115,9 +116,11 @@ console.log(grande('aldo')); // retorno ALDO
 <p> Array dentro de array </p>
 <pre>
 	// array dentro de array
-	let lista = ['recife', ['xx', 'yy']];
+	let lista = ['recife', ['xx', 'yy'], 'gravatá'];
   // exibir o xx
 	console.log(lista[1][0]);
+	// exibir gravatá
+  console.log(lista[2]);
 </pre>
 
 <p>
@@ -125,36 +128,99 @@ console.log(grande('aldo')); // retorno ALDO
 	lista.push('bezerros');
 </p>
 <p>
-// remove o primeiro ítem de um array <br>
-lista.shift(lista);
+	// remove o primeiro ítem de um array <br>
+	lista.shift(lista);
 </p>
 
 <p>
-// remove o item do array <br>
-lista.pop(); 
+	// remove o item do array <br>
+	lista.pop(); 
 </p>
+
+<p> 
+	// tamanho do array
+	console.log(lista.length);
+</p>
+
+<a name="objetos"></a>
+<h3> Objetivo </h3>
+<p> 
+	Objetos são estruturas de dados que armazenam propriedades e valores <br>
+No array, uso [] <br>
+No objeto, uso {} <br>
+Exemplo de uso 
+</p>
+<pre>
+	let person = {
+		name: 'aldo',
+		age: 30,
+		weight: 80
+		};
+</pre>
+
+<p> Outro exemplo</p>
+<pre>
+	// criar o array
+	let personagem = {
+		nome: 'Batman',
+		idade: '30',
+		pais: 'usa',
+		cores: ['black', 'gray'],
+		caracteristica: {
+			forca: 20,
+			maria: 5,
+			vida: 10,
+		},
+	}
+	// exibir tudo
+	console.log(personagem);
+	// exibir alguns
+	console.log(`${personagem.nome} tem ${personagem.idade} anos.`);
+	// exibir o vlaor de forca
+	console.log(personagem.caracteristica.forca);
+	// exibir a cor principal
+	console.log(personagem.cores[0]);
+</pre>
+
+<p> Alterando objetos </p>
+<pre>
+	personagem.nome = 'Superman'; // mudar no nome do personagem
+	personagem.caracteristica.forca = 77; // mudando outro dado.
+	personagem.cores.push('white'); // acrescentera uma cor
+	console.log(personagem);
+</pre>
+
+<p> Array de Objetos </p>
+<pre>
+// array de objetos
+let personagem = {
+  nome: 'Petter',
+  idade: 25,
+  carros: [
+    {modelo: 'fiat', cor: 'preto'},
+    {modelo: 'ferrari', cor: 'zaul'},
+  ]
+}
+
+// acessando dados:
+console.log(personagem.carros);
+console.log(personagem.carros[1].cor);
+</pre>
+
+
+consle.lg
+
+
+
+
+
+
+
+
 
 
 
 <hr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 exemplo: <br>
 <pre>
@@ -163,9 +229,8 @@ script...
   console.log("Marca = " + marca.textContent);
   const r2 =    document.querySelector("#resp2");
   r2.innerText = "O conteúdo é: " + marca.textContent;
-/script
+...script
 </pre>
-
 
 </body>
 </html>

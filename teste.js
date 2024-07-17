@@ -1,16 +1,13 @@
-	// array dentro de array
-	let lista = ['recife', ['xx', 'yy'], 'gravatá'];
+// array de objetos
+let personagem = {
+  nome: 'Petter',
+  idade: 25,
+  carros: [
+    {modelo: 'fiat', cor: 'preto'},
+    {modelo: 'ferrari', cor: 'zaul'},
+  ]
+}
 
-  console.log(lista);
-  // exibir o xx
-	console.log(lista[1][0]);
-
-  // quantos itens tem em um array
-  let total = lista.length;
-  console.log(`Total ${total}`);
-
-  // remove o item do array
-  lista.pop(); 
-  console.log(lista);
-
-  
+// acessando dados:
+console.log(personagem.carros);
+console.log(personagem.carros[1].cor);
