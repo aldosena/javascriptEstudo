@@ -6,6 +6,7 @@
   <title>Lista dos Estados </title>
 </head>
 <body>
+  <h1> EStados ! </h1>
 <form name="fmNovo">
   <p>
     <label>Estado: </label><br>
@@ -20,8 +21,14 @@
     const response = await fetch('https://www.minhanota.net.br/api/estadosbr.php');
     const estados = await response.json();
     console.log(estados);
-    const um = estados.sigla;
-    console.log(`sigla: ${um}`);
+    estados.forEach(elemento => {
+      console.log(`sigla: ${elemento.sigla} - nome: ${elemento.nome} `);
+    });
+
+    // pessoa.forEach(item => {
+    //     console.log(`Sigla: ${item.sigla}, Nome: ${item.nome}`);
+    // });
+
   }
   // executar
   verEstados();
