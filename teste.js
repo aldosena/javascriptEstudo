@@ -1,13 +1,15 @@
-// array de objetos
-let personagem = {
-  nome: 'Petter',
-  idade: 25,
-  carros: [
-    {modelo: 'fiat', cor: 'preto'},
-    {modelo: 'ferrari', cor: 'zaul'},
-  ]
+const pessoa = {
+  nome: 'Aldo',
+  sobrenome: 'Sena',
+  nomeCompleto: function(){
+    return `${this.nome} @ ${this.sobrenome}`;
+  }
 }
+console.log(pessoa.nomeCompleto());
 
-// acessando dados:
-console.log(personagem.carros);
-console.log(personagem.carros[1].cor);
+// Object.freeze(pessoa);
+pessoa.idade = 100;
+pessoa.nome = 'Leo';
+console.log(pessoa);
+// console.log(pessoa.idade);
+

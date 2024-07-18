@@ -27,7 +27,7 @@ Ultima aula vista: <br>
 <p><a href="#arrow"> Arrow Function </a></p>
 <p><a href="#array"> Array </a></p>
 <p><a href="#objetos"> Objetos </a></p>
-
+<p><a href="#loop"> Loop </a></p>
 
 <a name="switch"></a>
 <h3> switch </h3>
@@ -208,7 +208,37 @@ console.log(personagem.carros[1].cor);
 </pre>
 
 
-consle.lg
+<p> Funções dentro de Objetos </p>
+<p> exemplo do objeto:</p>
+<pre>
+	let pessoa = {
+		nome: 'Aldo',
+		sobrenome: 'Sena',
+		nomeCompleto: function(){
+			return `${this.nome} ${this.sobrenome}`;
+		}
+	}
+	console.log(pessoa.nomeCompleto());
+</pre>
+<p> 
+	* arrow functions não tem acesso ao <i>this</i> quando estão dentro da função;
+	* Use () para executar a função <br>
+		Para que um objeto nao possa ser alterado <br>
+		Object.freeze(pessoa);
+</p>
+
+
+<a name="loop"></a>
+<h3> Loop  </h3>
+<h4> Loop For </h4>
+<pre>
+	exemplo: 
+	for (let n = 0; n < 10; n++){
+		console.log('N: ' + n);
+	}
+</pre>
+
+
 
 
 
