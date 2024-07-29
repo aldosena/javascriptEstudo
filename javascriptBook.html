@@ -17,7 +17,8 @@ cfc cursos
 
 <p> 
 Ultima aula vista: <br>
-# 17 - Modulo 2 - (objetos) - Site B7<br>
+# 20 - Modulo 2 - (Loop em arrays) - Site B7<br>
+prox: #21 <br>
 </p>
 
 <h2> Índice </h2>
@@ -230,26 +231,52 @@ console.log(personagem.carros[1].cor);
 
 <a name="loop"></a>
 <h3> Loop  </h3>
-<h4> Loop For </h4>
+<p> Loop For </p>
 <pre>
 	exemplo: 
 	for (let n = 0; n < 10; n++){
 		console.log('N: ' + n);
 	}
 </pre>
+<p> Loop em array </p>
+<p> veja o exemplo 1: </p>
+<pre>
+let cores = ['red', 'blue', 'green', 'white']; <br>
+for (let n = 0; n = cores.length(); n++){
+	console.log('Cor: ' + cores[n]);
+}
+</pre>
 
+<p> Exemplo II - IN </p>
+<pre>
+// pega o índice, coloca em i e faz a pesquia
+for (let i in cores){
+  console.log(cores[i];
+  // mudando os nomes para maiúsculos
+  cores[i].nome = cores[i].nome.toUpperCase();
+}
+</pre>
 
+<p> Exemplo III - OF </p>
+<pre>
+// pega o valor do array e coloca na variável cor
+for (let cor of cores){
+   console.log(cor);
+}
+</pre>
 
-
-
-
-
-
-
-
-
-
-
+<p> Exemplo IV </p>
+<p> Objetos com array - exibindo o conteúdo </p>
+<pre>
+let cores = [
+  {nome: 'preto', qt: 10},
+  {nome: 'azul', qt: 7},
+  {nome: 'branco', qt: 5},
+];
+for (let cor of cores){
+  console.log(`Nome: ${cor.nome} - Qt: ${cor.qt}`); 
+}
+</pre>
 <hr>
 
 exemplo: <br>
