@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aldosena/cssdelphi/delphi.01.css" media="screen">
   <title> Estudo do Javascript </title>
 </head>
 <body>
 <h1> Javascript </h1>
+
+<p><a href="index.html"> Exercícios </a></p>
+
 <h2> Meu Guia Pessoal </h2>
 <h3> Atualizado em 2024-07-09 </h3>
 
-node studio
-hora de codar
-cfc cursos
-
-<p> 
-Ultima aula vista: <br>
-# 20 - Modulo 2 - (Loop em arrays) - Site B7<br>
-prox: #21 <br>
-</p>
-
 <h2> Índice </h2>
-
 <p><a href="#switch"> Switch </a></p>
 <p><a href="#funcoes"> Funções </a></p>
 <p><a href="#arrow"> Arrow Function </a></p>
 <p><a href="#array"> Array </a></p>
 <p><a href="#objetos"> Objetos </a></p>
-<p><a href="#loop"> Loop </a></p>
+<p><a href="#for"> Loop For </a></p>
+<p><a href="#while"> Loop While </a></p>
 
 <a name="switch"></a>
 <h3> switch </h3>
@@ -229,9 +222,8 @@ console.log(personagem.carros[1].cor);
 </p>
 
 
-<a name="loop"></a>
-<h3> Loop  </h3>
-<p> Loop For </p>
+<a name="for"></a>
+<h3> Loop For </h3>
 <pre>
 	exemplo: 
 	for (let n = 0; n < 10; n++){
@@ -288,6 +280,23 @@ script...
   r2.innerText = "O conteúdo é: " + marca.textContent;
 ...script
 </pre>
+
+<a name="while"></a>
+<h3> Loop While </h3>
+<pre>
+	script...
+		// pegar o objeto
+	function ExibirLinha(){  
+		let i = 1;
+		let p = document.getElementById("para");
+		while (i < 10){
+			let s = `Vc está na linha: ${i} <br>`;
+			p.innerHTML += s;
+			i++;
+		}; //while
+	}  
+	...script
+</pre>	
 
 </body>
 </html>

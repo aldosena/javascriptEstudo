@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tem Modal</title>
+</head>
+<body>
+
+<p> Carrecar Bootscrpt </p>
+
+<pre>
+  <p class="text-primary" onclick="novosCad()"><u> exibir modal - !@# </u></p>
+</pre>
+
+<pre>
+
+  async function init() {
+    initSidebar();
+    initCountNewLeads();
+    initProfileImage();
+    await useFetch.get_save('franquias', '/franquia/list/options');
+    window.exibirVendedores = exibirVendedores;
+    window.novosCad = novosCad;
+  }
+
+  function novosCad(){
+    const novosModal = new  bootstrap.Modal(document.getElementById('novosModal'));
+    novosModal.show();    
+  }  
+</pre>
+  
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> js </title>
+</head>
+<body>
+
+<h1> While </h1>  
+<button onclick="ExibirLinha()"> Iniciar</button>
+<p> Loop </p>
+
+<p id="para"> Linha </p>
+
+<script>
+  // pegar o objeto
+function ExibirLinha(){  
+  let i = 1;
+  let p = document.getElementById("para");
+  while (i < 10){
+    let s = `Vc está na linha: ${i} <br>`;
+    p.innerHTML += s;
+    i++;
+  }; //while
+}  
+</script>
+
+  
+</body>
+</html>
