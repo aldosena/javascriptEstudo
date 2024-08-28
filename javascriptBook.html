@@ -3,16 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aldosena/cssdelphi/delphi.01.css" media="screen">
   <title> Estudo do Javascript </title>
+<style>
+body {
+  font-family: verdana;
+}
+h1 { color: gray; }
+h2 { color: purple; }
+h3 { color: orange; }
+</style>
 </head>
 <body>
 <h1> Javascript </h1>
 
-<p><a href="index.html"> Exercícios </a></p>
-
 <h2> Meu Guia Pessoal </h2>
-<h3> Atualizado em 2024-07-09 </h3>
+<h3> Atualizado em 2024-08-28 </h3>
 
 <h2> Índice </h2>
 <p><a href="#switch"> Switch </a></p>
@@ -25,6 +30,7 @@
 
 <a name="switch"></a>
 <h3> switch </h3>
+
 <p> exemplo 1 </p>
 <pre>
 	switch (marca){
@@ -64,6 +70,7 @@
 
 <a name="arrow"></a>
 <h3> Arrow Function </h3>
+
 <p> xemplo de uma função normal </p>
 <pre>
 	function somar(x, y){
@@ -107,7 +114,10 @@ console.log(grande('aldo')); // retorno ALDO
 	console.log(colors[0]);
 </pre>
 
-<p> Array dentro de array </p>
+<p> An array is a special variable, which can hold more than one value: <br>
+const cars = ["Saab", "Volvo", "BMW"]; </p>
+
+<h3> Array dentro de array </h3>
 <pre>
 	// array dentro de array
 	let lista = ['recife', ['xx', 'yy'], 'gravatá'];
@@ -117,6 +127,44 @@ console.log(grande('aldo')); // retorno ALDO
   console.log(lista[2]);
 </pre>
 
+<p> It is a common practice to declare arrays with the const keyword. </p>
+
+<p> You can also create an array, and then provide the elements: </p>
+
+<pre>
+const cars = [];
+cars[0]= "Saab";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+</pre>
+
+<h4> Using Keyword new </h4>
+The following example also creates an Array, and assigns values to it:
+
+const cars = new Array("Saab", "Volvo", "BMW");
+
+Accessing Array Elements
+const cars = ["Saab", "Volvo", "BMW"];
+let xcar = cars[0];
+
+The xcar now is Saab !
+
+Note: Array indexes start with 0.
+
+Changing an Array Element
+const cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Opel";
+
+<h3> Converting an Array to a String </h3>
+The JavaScript method toString() converts an array to a string of (comma separated) array values. <br>
+Example <br>
+const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+document.getElementById("demo").innerHTML = fruits.toString(); <br>
+Result: <br>
+Banana,Orange,Apple,Mango <br>
+<hr>
+
+<h3> push </h3>
 <p>
 	<i> Inserir um novo ítem ao array </i> <br>
 	lista.push('bezerros');
@@ -135,6 +183,21 @@ console.log(grande('aldo')); // retorno ALDO
 	// tamanho do array
 	console.log(lista.length);
 </p>
+
+funcões de array
+fruits.length; = tamanho do array
+fruits.push; = adicionar itém ao fim do array
+fruits.pop(); = deleta o ultimo ítem do array
+fruits.shift(); = deleta o primeiro item do array
+fruits.join(' '); = junta os itens do array com se fosse uma única string (com espaço entre eles)
+fruits[0] = 'jaca'; = mudar valor do ítem do array
+
+// mudar o último item do aray
+let ultimo =  fruits.length - 1;
+fruits[ultimo] = 'ingá';
+furits[fruits.length - 1] = 'jambo';
+
+
 
 <a name="objetos"></a>
 <h3> Objetivo </h3>
@@ -231,7 +294,7 @@ console.log(personagem.carros[1].cor);
 	}
 </pre>
 <p> Loop em array </p>
-<p> veja o exemplo 1: </p>
+<p> veja o exemplo 1: pego o índice para exibir  </p>
 <pre>
 let cores = ['red', 'blue', 'green', 'white']; <br>
 for (let n = 0; n = cores.length(); n++){
@@ -243,7 +306,7 @@ for (let n = 0; n = cores.length(); n++){
 <pre>
 // pega o índice, coloca em i e faz a pesquia
 for (let i in cores){
-  console.log(cores[i];
+  console.log(cores[i]);
   // mudando os nomes para maiúsculos
   cores[i].nome = cores[i].nome.toUpperCase();
 }

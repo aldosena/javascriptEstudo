@@ -14,7 +14,7 @@
 </pre>
 
 <pre>
-
+  // serve para iniciar e disponibilizar os métodos para a "window"
   async function init() {
     initSidebar();
     initCountNewLeads();
@@ -24,10 +24,14 @@
     window.novosCad = novosCad;
   }
 
+  // o método que abre o modal
   function novosCad(){
     const novosModal = new  bootstrap.Modal(document.getElementById('novosModal'));
     novosModal.show();    
   }  
+  
+  // como o model é chamado na página
+  <p class="text-primary" onclick="novosCad()"><u> exibir modal</u></p>
 </pre>
   
 </body>
