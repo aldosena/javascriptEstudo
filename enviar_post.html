@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1> Enviar dados via Get </h1>
+
+<p> 
+  O codigo abaixo envia para uma url valores via GET <br>
+  e exibe o json de retorno da requisiçao </p>   
+
+  
+  <pre>
+    <form name="fmNo" id="fmNo" method="POST">
+      Nome <input type="text" name="add_turma" id="add_turma">
+      <button type="submit" onclick="return Enviar();"> Vai - </button>
+    </form>  
+  </pre>
+
+ <pre>
+ <script>
+
+
+async function Enviar(){
+  const meusDados = { 
+        nome: 'João', 
+        idade: 30 
+    };  
+    const myUrl = '/turma/amostrado';   // destino
+    const mySig = document.querySelector("#signo");   // exibir o retorno 
+    document.getElementById("fmNo").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Evita o envio padrão do formulário
+    
+
+
+
+    try {
+        const result = await fetch(myUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(meusDados)
+        });
+        const response = await result.json();
+
+        console.log("s: " +  response.status);
+    } catch (error) {
+        console.error('Erro ao atualizar informações:', error);
+    };
+    
+    
+
+    // try {
+    //     const result = await fetch(myUrl, {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify(meusDados)
+    //     });
+    //     const response = await result.json();
+
+    //     if (response.status) {
+    //         console.log("Informações atualizadas com sucesso!");
+    //     } else {
+    //         console.log("Erros ao atualizar informações");
+    //     }
+    // } catch (error) {
+    //     console.error('Erro ao atualizar informações:', error);
+    // };
+
+
+
+
+    
+    });  // addEvent
+
+    
+}  //f
+
+
+</script>
+ </pre>
+  
+  
+  <script>
+
+
+  </script>  
+
+
+</body>
+</html>
