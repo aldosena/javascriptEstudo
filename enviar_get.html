@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1> Enviar dados via Get </h1>
+
+<p> 
+  O codigo abaixo envia para uma url valores via GET <br>
+  e exibe o json de retorno da requisiçao </p>   
+<pre>
+
+...script...
+async function Enviar(){
+    const myUrl = '/turma/amostrado';   // destino
+    const mySig = document.querySelector("#signo");   // exibir o retorno 
+    document.getElementById("fmNo").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Evita o envio padrão do formulário
+    // this.action = myUrl;   //! inútil
+    const retorno = await fetch(myUrl);  
+    const dados = await retorno.json();
+    console.log('D: ' + dados.escola);  
+    mySig.innerHTML = dados.add_turma;
+    });  
+} 
+.../script...
+</pre>
+
+  <script>
+
+
+  </script>  
+
+
+</body>
+</html>
