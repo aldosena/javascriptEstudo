@@ -361,5 +361,55 @@ script...
 	...script
 </pre>	
 
+<p> Prevent Default </p>
+
+<pre>
+    ...script...
+        document.getElementById("meuFormulario").onsubmit = function(event) {
+            event.preventDefault(); // Interrompe o envio do formulário
+            
+            // Aqui você pode adicionar validações ou outras lógicas
+            if (confirm("Deseja realmente enviar o formulário?")) {
+                // Se a condição for atendida, o envio é retomado
+                this.submit();
+            } else {
+                alert("Envio cancelado!");
+            }
+        };
+    .../script...
+	
+	outro exemplo: 
+	
+	document.getElementById("myLink").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevents the default action (e.g., navigating to a link)
+    alert("Default action prevented!");
+});
+</pre>
+
+
+<h2> Para executar um método em JavaScript após a página ser carregada </h2>
+
+<p> Usando o evento window.onload: </p>
+<pre>
+window.onload = function() {
+    // Seu código aqui
+    console.log("Página carregada!");
+};
+
+<p> Usando o evento DOMContentLoaded: </p>
+<pre>
+document.addEventListener("DOMContentLoaded", function() {
+    // Seu código aqui
+    console.log("DOM completamente carregado e analisado!");
+});
+</pre>
+
+<p> Usando o atributo defer na tag <script>: </p>
+<p> HTML </p>
+
+<pre>
+<script src="seu-script.js" defer></script>
+</pre>
+
 </body>
 </html>

@@ -20,10 +20,27 @@
     </form>  
   </pre>
 
- <pre>
- <script>
+<p> exemplo de um método em uma service </p>
+<pre>
+    public static function amostrado($post)
+    {
+    $xnome = (isset($post['nome'])) ? $post['nome'] : "falhou";  
+    $xidade = (isset($post['idade'])) ? $post['idade'] : 0;  
+    $xturma = '';
+    $response = array(
+      'status' => "GRAU",
+      'xnome' => $xnome,
+      'xidade' => $xidade,
+      'xturma' => $xturma
+    );
+    echo json_encode($response);
+    }  
+</pre>
 
-
+<p> O script propriamente dito </p>  
+  
+<pre>
+... script ...
 async function Enviar(){
   const meusDados = { 
         nome: 'João', 
@@ -83,14 +100,14 @@ async function Enviar(){
 }  //f
 
 
-</script>
+.../script...
  </pre>
   
   
-  <script>
+<script>
 
 
-  </script>  
+</script>  
 
 
 </body>

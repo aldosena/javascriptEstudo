@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudo do Javascript </title>
+</head>
+<body>
+  <h1> Javascript </h1>
+
+  <h2> Campo só Currency Edit </h2>
+  <form name="fmOne" id="fmOne">
+    <label for="descricao">Descrição: </label> <br>
+    <input type="text" id="descricao" name="descricao"> </p>
+    
+    <label for="grana"> R$ </label><br>
+    <input type="text" value="1.55" name="grana" id="grana" onchange="confere();">
+
+  </form>
+  <h2> <button onclick="confere();"> Salvar - !@#$% </button></h2> 
+<script>
+function novoTexto(){
+  let alvo = document.getElementById("grana");
+  alvo.value = 'xxx';
+}
+
+
+
+
+
+
+
+
+
+
+
+  // console.log(s);
+function confere(){  
+  let alvo = document.getElementById("grana");
+  // -------
+  let frase = 0;
+  let myNu = 0;
+  let $v = "0";
+  let k = 0;
+  let vg = 0;
+  let grana = document.getElementById("grana").value;
+  console.log(`digitado: ${grana}`);
+  for(const x of grana){
+      k = k + 1;
+      console.log('x' + '(' +  k + '): ' + x);
+      if (Number(x) == 1){ frase = frase + x; };
+      if (Number(x) == 2){ frase = frase + x; };
+      if (Number(x) == 3){ frase = frase + x; };
+      if (Number(x) == 4){ frase = frase + x; };
+      if (Number(x) == 5){ frase = frase + x; };
+      // frase = frase + String(x);
+      // frase = frase + x;
+      // if (Number.isInteger(x)){ $v = $v + "A" + x};
+  };
+  console.log('Frase: ' + frase);
+  myNu = Number(frase);
+  console.log('=== : ' + myNu);
+  vg = myNu/100;
+  console.log(`g: ${vg}`);
+  // 
+  //
+  let formatador = new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'
+  });
+  let numeroFormatado = formatador.format(vg);
+  console.log("forma: " + numeroFormatado); 
+  alvo.value = numeroFormatado;
+} // f 
+</script>  
+
+</body>
+</html>
