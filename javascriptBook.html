@@ -162,8 +162,33 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
 document.getElementById("demo").innerHTML = fruits.toString(); <br>
 Result: <br>
 Banana,Orange,Apple,Mango <br>
-<hr>
 
+<h3> List </h3>
+	<p> Exemplo I </p>
+<pre>	
+    const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    let text = "";
+    list: {
+      text += cars[0] + "<br>"; 
+      text += cars[1] + "<br>"; 
+      break list;
+      text += cars[2] + "<br>"; 
+      text += cars[3] + "<br>"; 
+    }
+    document.getElementById("demo").innerHTML = text;
+</pre>
+	
+<p> exemplo II </p>	
+<pre>
+    const city = ["recife", "olinda", "jaboatao", "gravatá"];
+    let mapa = "";
+    list: {
+        mapa += "c: " + city[0] + " e " + city[1] + "-";
+    }
+    document.getElementById("city").innerHTML = city;	
+</pre>
+
+	
 <h3> push </h3>
 <p>
 	<i> Inserir um novo ítem ao array </i> <br>
