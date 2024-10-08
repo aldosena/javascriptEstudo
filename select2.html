@@ -31,11 +31,11 @@
 <p> </p>
 <hr>
 
-<h4> Select Especial - !@ </h4>
+<h4> Select Especial - !@# </h4>
 <form name="fmOne" id="fmOne" action="#">
   <p>
     <label for="city"> Cidade:</label> <br>
-    <select id="city" name="city[]" class="form-control js-example-basic-multiple" multiple="multiple">
+    <select id="city" name="city[]" class="form-control" multiple="multiple">
       <option value="REC">Recife </option>
       <option value="OLD"> Olinda </option>
       <option value="GRV" selected> Gravatá </option>
@@ -46,7 +46,7 @@
 
 <script>
 $(document).ready(function() {
-    $('.js-example-basic-multiple').select2();
+    $('#city').select2();
 });
 </script>
 
