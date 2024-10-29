@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> appendChield </title>
+</head>
+<body>
+
+<h1> addEventListsener </h1>  
+
+<h2> Receber do Formulário </h2>
+
+<form name="fmPessoa" id="fmPessoa">
+  <p>
+    <label for="xnome"> Nome da Pessoa </label><br>
+    <input type="text" name="xnome" id="xnome">
+  </p>  
+</form>
+<p><button id="btAdicionar" onclick="adicionarPessoa()"> Adicionar </button></p>
+
+<hr>
+<ul>
+  <li> UgaUga</li>
+</ul>
+
+<script>
+  function validarNome(){
+    console.log('clicou para Validar');
+    let xnome = document.querySelector('#xnome').value;
+    if (xnome == ''){
+      console.log('está vazio');
+      return false;
+    }
+  };
+
+
+function adicionarPessoa(){
+  console.log('metodo adicionar pessoa');
+  tba = document.querySelector('#btAdicionar');
+  tba.addEventListener('click', ()=>{
+        let retorno = true;
+        retorno = validarNome();
+        console.log('qual o retorno: ' + retorno);
+  });
+
+}  
+
+
+
+  // // funão de teste
+  // function meuAlerta(){
+  //     alert("Você clicou em um botão especial");
+  // }
+
+  // bta = document.querySelector('#btAlerta');
+  // bta.addEventListener("click", meuAlerta);
+
+  // function clicou(){
+  //   console.log("Clicou no botão");
+  // }
+  // // exemplo 1 crar a variavel botão, manda a "definicao" da mesma
+  // let botao1 = document.querySelector('#meuBotao1');
+  // botao1.addEventListener("click", clicou);
+
+  // // usando funcao
+  // let botao2 = document.querySelector('#meuBotao2');
+  // botao2.addEventListener("click", function(){
+  //     clicou();
+  // });  
+
+  // // arrow function
+  // let botao3 = document.querySelector('#meuBotao3');
+  // botao3.addEventListener("click", ()=>{
+  //     clicou();
+  // });  
+
+  // a linha abaixo foi criada por uma ia
+  //document.getElementById("meuBotao").addEventListener("click", function(){
+  //});
+</script>
+
+</body>
+</html>
