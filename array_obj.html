@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aldosena/cssdelphi/delphi.01.css" media="screen">
+  <title> Estudo do Javascript </title>
+</head>
+<body>
+  <h1> Array - MAP  </h1>
+<pre>
+  
+</pre>
+  
+<script>
+  let pessoas = [
+        { nome: "Maria", idade: 25 },
+        { nome: "Pedro", idade: 30 },
+        { nome: "Carla", idade: 10 },
+        { nome: "Miguel", idade: 40 },
+        { nome: "Jose", idade: 50 }
+  ];
+  console.log(pessoas);
+
+  for (let i in pessoas){
+    console.log('p: ' + pessoas[i].nome);
+  }  
+
+  let maiores = [];
+  maiores = pessoas.map(function(item){
+    return {nome: item.nome.toUpperCase(), idade: item.idade};
+  });
+  console.log('maiuculas ',  maiores);
+  maiores = pessoas.filter(function(item){
+      return item.idade > 18; 
+  });
+  
+  console.log('maiores ', maiores);
+  //console.log('m: ' + maiores[1].nome);
+  
+  // for (let i in maiores){
+  //   console.log('u: ' + maiores[i].nome);
+  // }
+
+
+</script>
+
+
+</body>
+</html>

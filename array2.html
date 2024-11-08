@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aldosena/cssdelphi/delphi.01.css" media="screen">
+  <title> Estudo do Javascript </title>
+</head>
+<body>
+  <h1> Array II  </h1>
+
+  <h2> splice(X, X); </h2>
+  <h2> lista1.concat(lista2); </h2>
+  <h2> lista.sort(); </h2>
+  <h2> lista.reverse(); </h2>
+
+<pre>
+  
+</pre>
+  
+<script>
+  let city = ['recife', 'olinda', 'jaboatão', 'gravatá', 'caruaru'];
+  console.log(city);
+  // remover 1 item
+  city.splice(1,1);  // ponto inicial para deletar, quantide de itens à deletar
+  // se a quantidade nao for informada, todos os ítem a partir do inicial será apagado
+  console.log(city);
+
+  // juntar dois array
+  let state = ['pará', 'acre', 'bahia', 'minas'];
+  // juntar os dois arrays
+  let br = city.concat(state);
+  console.log(br);
+
+  // ordenar em ordem alfabética
+  console.log(state);
+  let ordem = state.sort();
+  console.log(ordem);
+
+  // revere a ordem os ítens do array
+  console.log(state);
+  let re = state.reverse();
+  console.log(re);
+
+</script>
+
+
+</body>
+</html>

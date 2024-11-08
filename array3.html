@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aldosena/cssdelphi/delphi.01.css" media="screen">
+  <title> Estudo do Javascript </title>
+</head>
+<body>
+  <h1> Array III  </h1>
+
+  <h2> lista.map( </h2>
+  <h2> lista.filter( </h2>
+  <h2> lista.every( </h2>
+  <h2> lista.some( </h2>
+
+<pre>
+  
+</pre>
+  
+<script>
+  let ages = [5, 10, 15, 20, 25, 30, 35];
+  console.log(ages);
+
+  // map
+  let dobro = [];
+  dobro = ages.map(function(item){
+      return item * 2;
+  });
+  console.log(dobro);
+
+  // -----------------------------------
+  // usando for
+  console.log('Ages = ' + ages);
+  let novo = [];
+  for (let i in ages){
+      novo.push(ages[i] * 2);
+  };
+  console.log('Novo = ' + novo);
+
+  // ----------------------------------
+  // usando filter - retorna só o que foi filtrado
+  console.log('Idades: ' + ages);
+  let maiores = [];
+  maiores = ages.filter(function(item){
+    return (item > 18) ? true : false;
+  });
+  console.log('Maiores: ' + maiores);
+
+  // ------------------------------------
+  // usado  every = retorna apenas true / false
+  console.log('ages: ' + ages);
+  let todos = [];
+  todos = ages.every(function(item){
+      return (item > 10) ? true : false;
+  });
+  console.log('todos maiores que 10: ' + todos);
+
+  // alguns ---------------------------------
+  // usando some = retorna true / false
+  console.log('ages' + ages);
+  let alguns = [];
+  alguns = ages.some(function(item){
+    return (item > 10) ? true: false; 
+  });
+  console.log('alguns maiores que 10: ' + alguns);
+
+</script>
+
+
+</body>
+</html>

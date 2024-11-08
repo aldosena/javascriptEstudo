@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aldosena/cssdelphi/delphi.01.css" media="screen">
+  <title> Estudo do Javascript </title>
+</head>
+<body>
+  <h1> Array I  </h1>
+<pre>
+  ...script...
+    let lista = ['recife', 'olinda', 'jaboatão', 'gravatá'];
+    console.log('minha lista = ' + lista);
+    // convertr para string
+    let s = lista.toString();
+    console.log(s);
+    // converte em string colocando * entre as partes
+    let s2 = lista.join('*');
+    console.log(s2);
+    // posição do ítem na string
+    let pos = lista.indexOf('olinda');
+    console.log('posicao: ' + pos);
+  
+    // alterar o array:
+    // isolar o primeiro
+    let primeiro = lista.shift();
+    console.log('Lista menor: ' + primeiro);
+    console.log(lista);
+    // isola o ultimo
+    let ultimo = lista.pop();
+    console.log(ultimo);
+    console.log(lista);
+  
+    // inserir novo (no vim)
+    lista.push('bezerros');
+    console.log('push: ' + lista);
+    lista[lista.length] = 'Vitoria';
+    console.log(lista);
+  
+    // editar um valor
+    lista[0] = 'Camaragibe';
+  ... secript ...
+  
+</pre>
+  
+<script>
+  let lista = ['recife', 'olinda', 'jaboatão', 'gravatá'];
+  console.log('minha lista = ' + lista);
+  // convertr para string
+  let s = lista.toString();
+  console.log(s);
+  // converte em string colocando * entre as partes
+  let s2 = lista.join('*');
+  console.log(s2);
+  // posição do ítem na string
+  let pos = lista.indexOf('olinda');
+  console.log('posicao: ' + pos);
+
+  // alterar o array:
+  // isolar o primeiro
+  let primeiro = lista.shift();
+  console.log('Lista menor: ' + primeiro);
+  console.log(lista);
+  // isola o ultimo
+  let ultimo = lista.pop();
+  console.log(ultimo);
+  console.log(lista);
+
+  // inserir novo (no vim)
+  lista.push('bezerros');
+  console.log('push: ' + lista);
+  lista[lista.length] = 'Vitoria';
+  console.log(lista);
+
+  // editar um valor
+  lista[0] = 'Camaragibe';
+
+</script>
+
+
+</body>
+</html>

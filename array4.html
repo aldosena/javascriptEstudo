@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aldosena/cssdelphi/delphi.01.css" media="screen">
+  <title> Estudo do Javascript </title>
+</head>
+<body>
+  <h1> Array IV  </h1>
+
+  <h2> lista.find( </h2>
+  <h2> lista.findIndex( </h2>
+
+<pre>
+  
+</pre>
+  
+<script>
+  let ages = [5, 10, 15, 20, 25, 30, 35];
+  console.log(ages);
+
+  // localizar o item
+  let achado = [];
+  achado = ages.find(function(item){
+    return (item > 10) ? true : false;
+  });
+  console.log('c:', achado);
+
+  // localizar a posicao do ítem
+  let pos = ages.findIndex(function(item){
+    return (item > 10) ? true : false;
+  });
+  console.log(pos);
+
+  // lista de objetos 
+  let pessoas = [
+        { nome: "Maria", idade: 25, codigo: 100 },
+        { nome: "Pedro", idade: 30, codigo: 200 },
+        { nome: "Carla", idade: 10, codigo: 300 },
+        { nome: "Miguel", idade: 40, codigo: 400 },
+        { nome: "Jose", idade: 50, codigo: 500 }
+  ];
+  console.log(pessoas);
+
+  cliente = [];
+  // localziar o objeto
+  cliente = pessoas.find(function(item){
+       return (item.codigo == 300) ? true : false;
+  })
+  console.log(cliente);
+
+</script>
+
+
+</body>
+</html>

@@ -71,3 +71,5 @@ console.log(usuario.apresentacao());
 // console.log(usuario.idade);
 // console.log(usuario.profissao);
 console.log(usuario);
+
+console.log('GRAU TECNICO');
