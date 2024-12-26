@@ -16,18 +16,21 @@
   <p><label for="convidado">Convidado</label><br>
   <input type="checkbox" id="convidado" name="convidado"> </p>
 
-  <p><button type="button" id="btAdd" onclick="confereDados()"> Adicionar</button></p>
+  <p><button type="button" id="btAdd"> Adicionar</button></p>
 
 </form>
 
 <script>
-  function confereDados(){
+  // pego o botão
+  var btAdicionar = document.querySelector('#btAdd');
+
+    btAdicionar.addEventListener('click', ()=>{
     let meuNome = document.querySelector('#nome').value;
     console.log(meuNome);
 
     let ckConvidado = document.querySelector('#convidado').checked;
     console.log('convidado: ', ckConvidado);
-  }; //f  
+  })  
 
 </script>
 

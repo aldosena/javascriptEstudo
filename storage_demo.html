@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p><a href="index.html"> index </a></p>
+  <p><a href="storage.html"> localStorage </a></p>
+
+<div>
+<input type="text" id="task" placeholder="Enter task">
+<button onclick="addTask()">Add Task</button>
+<button onclick="clearTasks()">Clear All</button>
+</div>
+<ul id="taskList"></ul>
+
+<script>
+const taskList = document.getElementById('taskList');
+let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+function addTask() {
+const task = document.getElementById('task').value;
+tasks.push(task);
+localStorage.setItem('tasks', JSON.stringify(tasks));
+renderTasks();
+}
+
+function clearTasks() {
+localStorage.clear();
+tasks = [];
+renderTasks();
+}
+
+
+function renderTasks() {
+taskList.innerHTML = '';
+tasks.forEach(task => {
+const li = document.createElement('li');
+li.textContent = task;
+taskList.appendChild(li);
+});
+}
+
+renderTasks();
+</script>
+</body>
+</html>
