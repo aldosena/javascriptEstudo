@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Estudo </title>
+</head>
+<body>
+  <h1> Estudo do JavaScript </h1>
+
+  <p> Pesquisar CEP. </p>
+  <p> Site usado: <a href="https://viacep.com.br/"> https://viacep.com.br/ </a> </p>
+
+<div> 
+  <p id="cep"> Cep: </p>
+  <p id="localidade"> Localidade: </p>
+</div>
+
+<script>
+  // pega os campo na página
+  let cep = document.querySelector("#cep");
+  let localidade = document.querySelector("#localidade");
+
+  fetch("https://viacep.com.br/ws/54220725/json") // faz a pesquisa na api
+  .then(response => response.json()) // convete para json
+  .then(data => {
+      console.log(data); 
+      cep.innerHTML += data.cep; // escreve na página
+      localidade.innerHTML += data.localidade;
+  });
+</script>
+  
+</body>
+</html>
