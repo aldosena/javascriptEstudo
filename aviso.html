@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1> Aviso </h1>    
+<p class="aviso">.</p>
+
+<button type="button" id="fica" onclick="MyAviso('Este aviso fica constante em tela', false, 'green')"> Constante </button>
+<button type="button" id="apaga" onclick="MyAviso('Este aviso vai apagar em 5 segundos', true, 'red')"> Apagar em 5</button>
+<button type="button" id="semcor" onclick="MyAviso('aviso sem cor definida', false)"> Sem Cor </button>
+<button type="button" id="sotexto" onclick="MyAviso('Só o Texto aqui')"> So texto </button>
+
+<script>
+    function MyAviso(txt, ocu=true, cor='blue'){
+        // console.log('iniciar');
+        let para = document.querySelector('.aviso');
+        para.innerHTML = txt;
+        // mudar a  cor
+        para.style.color = cor;
+        // apaga o texto
+        function ocultar(){
+            para.innerHTML = ".";
+        }
+        // depois de 5 segundos, apaga o texto
+        if (ocu === true){
+            setTimeout(ocultar, 5000);
+        };
+    }
+</script>
+
+    
+</body>
+</html>
