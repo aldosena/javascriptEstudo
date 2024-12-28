@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> DOM </title>
+</head>
+<body>
+
+<h1> DOM </h1>  
+<button type="button" onclick="novoTexto()"> Inserir aviso</button>
+
+<script>
+  function novoTexto(){
+    var novoH = document.createElement('h3');
+    novoH.innerHTML = 'Meu texto em h3';
+    var corpo = document.body;
+    corpo.appendChild(novoH);
+  };
+</script>
+
+</body>
+</html>
