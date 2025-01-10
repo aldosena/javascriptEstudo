@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<h1> Ordenar </h1>
+
+<script>
+let meuArray = [];
+
+function ordenar(myNumber = "0"){
+  let str = myNumber.toString();
+  let cara;
+  let meuArray = [];
+  const t = str.length;
+  for (let i=0; i<t; i++){
+      cara = str.charAt(i);
+      meuArray.push(cara);
+    };
+  // ordenar
+  meuArray.sort();
+  // console.log(meuArray);
+  let final = meuArray.join();
+  console.log(final);
+};
+ordenar(2025);
+</script>  
+</body>
+</html>
+

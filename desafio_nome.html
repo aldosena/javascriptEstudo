@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio </title>
+</head>
+<body>
+<h1> Desafio ! </h1>
+<h2> Nome abreviado </h2> 
+
+<script>
+  const nome = prompt("Digite seu nome: ");
+  let palavar;
+  let letra;
+  //console.log(nome);
+  const quebrado = nome.split(' ');
+  console.log('inicial: ', quebrado);
+  const tamanho = quebrado.length;
+  //console.log('tamanho: ', tamanho);
+  //let posi = 1;
+  if (tamanho > 2){
+      let posi = 1; // inicial, 2 palavra
+      while (posi < tamanho-1){  // do ultimo ao penultimo
+          palavra = quebrado[posi];
+          //console.log('palavra: ', palavra, ' p:',posi);
+          if (palavra.length > 3){
+                letra = palavra.charAt(0) + ".";
+                console.log('letra: ', letra);
+                // coloca no array:
+                quebrado[posi] = letra;
+          }; // se > 3
+          posi = posi + 1;
+      }; // while
+  }; // tamanho
+  console.log('final: ', quebrado);
+  console.log('tipo: ', typeof(quebrado));
+  let final = quebrado.join(" ");
+  console.log('final: ', final);
+  //
+  // console.log('tamanho: ', tamanho);
+  //if (quebrado.length > 2){
+  //  const sobrenome = quebrado[0]
+ // }
+//  let k = 0;
+//  while (k < 4){
+//   k = k + 1;
+//   console.log(k); 
+//  };
+  //if ()
+</script>
+
+
+</body>
+</html>
