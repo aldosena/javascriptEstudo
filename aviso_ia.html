@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocultar Parágrafo</title>
+</head>
+<body>
+  <p id="meuParagrafo">Este parágrafo será ocultado em 5 segundos.</p>
+
+  <script>
+    // Função para ocultar o parágrafo
+    function ocultarParagrafo() {
+      document.getElementById('meuParagrafo').style.display = 'none';
+    }
+
+    // Ocultar o parágrafo após 5 segundos (5000 milissegundos)
+    setTimeout(ocultarParagrafo, 5000);
+  </script>
+</body>
+</html>
