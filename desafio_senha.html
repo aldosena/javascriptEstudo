@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Desafio Senha </title>
+</head>
+<body>
+  <h1> Desafio Senha </h1>
+  <p>
+    Regras: <br>
+    Mínimo de 8 caracteres. <br>
+    Pelo menos uma letra maiúscula. <br>
+    Pelo menos uma letra minúscula. <br>
+    Pelo menos um número. <br>
+    Pelo menos um caractere especial. <br>
+
+  </p>
+  <form>
+    <input type="text" id="myPass" name="myPass"> 
+    <button type="button" onClick="conferirPw()"> Conferir </button>
+  </form>
+  <hr>
+  <ul id="aviso"></ul>
+  
+<script>
+function conferirPw(){  
+  let erro = 0;
+  let obs = ""; 
+  let palavra = document.getElementById("myPass").value;
+  console.log("p:", palavra);
+  //let numeros = ["1", "2"]
+  //let minusculas = ["a", "b", c, d, f, g, j, k, l, m, n, p, q, r, s, t, v, w, x, z
+  // let maiuscula = ["A", "B"]
+  if (palavra.length < 8){
+    ++erro;
+    obs += "<li> A senha deve ter no mínimo 8 caracteres </li>";
+  };
+  let especiais = ["!", "@", "#", "$", "%", "&", "*"];
+  let r = palavra.includes("@");  // nao funcioou com array
+  if (r == false){
+    ++erro;
+    obs += "<li> A senha deve conter pelo menos um caractere especial </li>";
+  };
+  let aviso = document.getElementById("aviso");
+  aviso.innerHTML = obs;
+};
+</script>  
+</body>
+</html>

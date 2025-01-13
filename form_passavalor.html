@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3><a href="index.html"> Index </a></h3>
+  
+  <h1> Passar valores de um formulário </h1>
+  <form id="fmOne" name="fmOne" action="./form_passavalor_sv.php" method="POST">
+    <p> <label for="nome"> Nome:</label><br>
+    <input type="text" id="nome" name="nome" value="aldo"> </p>
+
+    <p> <label for="cidade">Cidade:</label><br>
+    <input type="text" id="cidade" name="cidade" value="gravatá"></p>
+
+    <p><label for="dia"> Dia: </label><br>
+      <input type="date" id="dia" name="dia"></p>
+    
+    <button type="submit"> Enviar </button>
+  </form>
+
+  <script>
+    // passar os valores do formulário para um outro arquivo
+    async function passaValores(){
+        let data = new FormData(document.getElementById('fmOne'));
+        const response = await fetch('form_passavalor_sv.php',{
+            method: 'POST',
+            body: data,
+        });
+        if ($response.ok){
+          console.log('ok. Dados enviados');
+        }else{
+          console.log('erro ao enviar dados');
+        };
+    } // function passaValor
+  </script>
+
+  </body>
+</html>
