@@ -24,26 +24,39 @@
   <ul id="aviso"></ul>
   
 <script>
-function conferirPw(){  
+  const numeros = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const minusculas = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+  const maiustulas = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+  const especiais = ["!", "@", "#", "$", "%", "&", "*"];
   let erro = 0;
   let obs = ""; 
-  let palavra = document.getElementById("myPass").value;
-  console.log("p:", palavra);
-  //let numeros = ["1", "2"]
-  //let minusculas = ["a", "b", c, d, f, g, j, k, l, m, n, p, q, r, s, t, v, w, x, z
-  // let maiuscula = ["A", "B"]
-  if (palavra.length < 8){
-    ++erro;
-    obs += "<li> A senha deve ter no mínimo 8 caracteres </li>";
-  };
-  let especiais = ["!", "@", "#", "$", "%", "&", "*"];
-  let r = palavra.includes("@");  // nao funcioou com array
-  if (r == false){
-    ++erro;
-    obs += "<li> A senha deve conter pelo menos um caractere especial </li>";
-  };
-  let aviso = document.getElementById("aviso");
-  aviso.innerHTML = obs;
+  let temNumero = 0;
+  //console.log('array: ', arrayPalavra);
+  
+  // tamanho do caracteres ------------------------------------------------------  
+  function conferirPw(){  
+    let palavra = document.getElementById("myPass").value;
+    let aviso = document.getElementById("aviso");
+   aviso.innerHTML = "";
+   // aviso.removeChild();
+  let arrayPalavra = palavra.split(""); // trnaformar em array
+  // console.log(arrayPalavra);
+  if (arrayPalavra.length < 8){
+     obs += "<li> A senha deve ter no mínimo 8 caracteres </li>";
+  }else{
+     obs += "<li> Tamanho Ok </li>";
+  }
+  
+  // numeros -----------------------------------------------------------------
+  temNumero = arrayPalavra.some(function (item){
+    // console.log('item: ', item);
+    if (numeros.includes(item)){ return true; }else{ return false;
+    };
+  });
+  // console.log('tem numero:', temNumero);
+  if (temNumero == false){ obs += "<li> Falta numero da senha </li>"; }else{ obs += "<li> Numero ok </li>"; }; 
+  
+  aviso.innerHTML += obs;
 };
 </script>  
 </body>
