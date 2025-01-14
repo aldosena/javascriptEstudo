@@ -6,6 +6,8 @@
   <title> Desafio Senha </title>
 </head>
 <body>
+  <h3><a href="index.html"> Index </a></h3>
+
   <h1> Desafio Senha </h1>
   <p>
     Regras: <br>
@@ -37,8 +39,9 @@
   function conferirPw(){  
     let palavra = document.getElementById("myPass").value;
     let aviso = document.getElementById("aviso");
-   aviso.innerHTML = "";
-   // aviso.removeChild();
+  // aviso.Text = "";
+  while (aviso.firstChild) { aviso.removeChild(aviso.firstChild); };
+
   let arrayPalavra = palavra.split(""); // trnaformar em array
   // console.log(arrayPalavra);
   if (arrayPalavra.length < 8){
