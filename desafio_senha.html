@@ -31,16 +31,17 @@
   const maiustulas = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
   const especiais = ["!", "@", "#", "$", "%", "&", "*"];
   let erro = 0;
-  let obs = ""; 
+  
   let temNumero = 0;
   //console.log('array: ', arrayPalavra);
   
   // tamanho do caracteres ------------------------------------------------------  
   function conferirPw(){  
     let palavra = document.getElementById("myPass").value;
-    let aviso = document.getElementById("aviso");
-  // aviso.Text = "";
-  while (aviso.firstChild) { aviso.removeChild(aviso.firstChild); };
+    const aviso = document.getElementById("aviso");
+    let obs = ""; 
+    aviso.innerHTML = "";
+  //  while (aviso.firstChild) { aviso.removeChild(aviso.firstChild); };
 
   let arrayPalavra = palavra.split(""); // trnaformar em array
   // console.log(arrayPalavra);

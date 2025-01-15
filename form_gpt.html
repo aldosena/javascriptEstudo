@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Formulario </title>
+</head>
+<body>
+  <h3><a href="index.html"> Index </a></h3>
+  
+<form id="meuFormulario">
+  <input type="text" name="nome" placeholder="Seu nome" required>
+  <input type="email" name="email" placeholder="Seu email" required>
+  <button type="submit">Enviar</button>
+</form>
+
+<script>
+  document.getElementById('meuFormulario').addEventListener('submit', async function (event) {
+  event.preventDefault(); // Evita o envio padrão do formulário
+
+  // Captura os dados do formulário
+  const form = event.target;
+  const formData = new FormData(form);
+
+  try {
+    // Envia os dados usando fetch com await
+    const response = await fetch('./form_gpt_sv.php', {
+      method: 'POST',
+      body: formData,
+    });
+
+    // Verifica se a resposta foi bem-sucedida
+    if (!response.ok) {
+      throw new Error(`Erro: ${response.statusText}`);
+    }
+
+    // Lê o conteúdo da resposta como texto
+    const result = await response.text();
+
+    // Exibe o resultado do servidor
+    console.log('Resposta do servidor:', result);
+    alert('Dados enviados com sucesso: ' + result);
+  } catch (error) {
+    // Trata erros de requisição
+    console.error('Erro na requisição:', error);
+    alert('Ocorreu um erro ao enviar os dados.');
+  }
+});
+
+</script>
+
+</body>
+</html>
