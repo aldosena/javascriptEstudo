@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
@@ -41,7 +41,9 @@
   function confere(){
     //   console.log('conferindo dados... ');
     let cidade = document.querySelector("#cidade").value;
+    const btNovo = document.querySelector('#btNovo');
     if (cidade.length > 3){
+      btNovo.setAttribute('disabled', 'true');
       return true;
     }else{
       return false;
