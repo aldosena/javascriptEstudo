@@ -1,0 +1,574 @@
+{
+  "usuarios": [
+    {
+      "id_usuario": "2205",
+      "nome": "Alexandre Costa da Cruz",
+      "status": "1"
+    },
+    {
+      "id_usuario": "24",
+      "nome": "Brenda Miranda ",
+      "status": "1"
+    },
+    {
+      "id_usuario": "5164",
+      "nome": "Bruna Bianca",
+      "status": "1"
+    },
+    {
+      "id_usuario": "3270",
+      "nome": "Guilherme Inácio ",
+      "status": "1"
+    },
+    {
+      "id_usuario": "5166",
+      "nome": "Inglydsbergma",
+      "status": "1"
+    },
+    {
+      "id_usuario": "26",
+      "nome": "Itallo Henrique ",
+      "status": "1"
+    },
+    {
+      "id_usuario": "6518",
+      "nome": "Julielle Mayara ",
+      "status": "1"
+    },
+    {
+      "id_usuario": "1683",
+      "nome": "Katia",
+      "status": "1"
+    },
+    {
+      "id_usuario": "5165",
+      "nome": "Ketura Kelly",
+      "status": "1"
+    },
+    {
+      "id_usuario": "5167",
+      "nome": "Thainara Batista ",
+      "status": "1"
+    }
+  ],
+  "cadastrosPorTipo": [
+    {
+      "id_usuario": "6",
+      "totalBase": "11",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "24",
+      "totalBase": "5514",
+      "total": "1",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "25",
+      "totalBase": "96",
+      "total": "2",
+      "A": "2",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "26",
+      "totalBase": "6769",
+      "total": "7",
+      "A": "7",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "27",
+      "totalBase": "5",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "42",
+      "totalBase": "4",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "1047",
+      "totalBase": "2",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "1353",
+      "totalBase": "10",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "1354",
+      "totalBase": "1",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "1577",
+      "totalBase": "4",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "1683",
+      "totalBase": "4013",
+      "total": "1",
+      "A": "0",
+      "R": "1",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "2011",
+      "totalBase": "0",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "2178",
+      "totalBase": "336",
+      "total": "12",
+      "A": "12",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "2189",
+      "totalBase": "0",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "2205",
+      "totalBase": "19",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "2207",
+      "totalBase": "0",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "2717",
+      "totalBase": "2659",
+      "total": "1",
+      "A": "0",
+      "R": "1",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "3270",
+      "totalBase": "2438",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "5164",
+      "totalBase": "4168",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "5165",
+      "totalBase": "3162",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "5166",
+      "totalBase": "3121",
+      "total": "1",
+      "A": "0",
+      "R": "1",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "5167",
+      "totalBase": "3925",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "6510",
+      "totalBase": "3",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "6515",
+      "totalBase": "21",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "6517",
+      "totalBase": "21",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    },
+    {
+      "id_usuario": "6518",
+      "totalBase": "2329",
+      "total": "0",
+      "A": "0",
+      "R": "0",
+      "V": "0",
+      "AI": "0"
+    }
+  ],
+  "leadsInternet": [],
+  "agendamentos": [
+    {
+      "id_usuario": "6",
+      "ativas": "1",
+      "faladas": "8",
+      "potencial": "0",
+      "nao_convertida": "8"
+    },
+    {
+      "id_usuario": "24",
+      "ativas": "158",
+      "faladas": "215",
+      "potencial": "0",
+      "nao_convertida": "364"
+    },
+    {
+      "id_usuario": "25",
+      "ativas": "24",
+      "faladas": "36",
+      "potencial": "0",
+      "nao_convertida": "26"
+    },
+    {
+      "id_usuario": "26",
+      "ativas": "30",
+      "faladas": "82",
+      "potencial": "0",
+      "nao_convertida": "109"
+    },
+    {
+      "id_usuario": "27",
+      "ativas": "3",
+      "faladas": "20",
+      "potencial": "0",
+      "nao_convertida": "12"
+    },
+    {
+      "id_usuario": "1683",
+      "ativas": "0",
+      "faladas": "6",
+      "potencial": "0",
+      "nao_convertida": "6"
+    },
+    {
+      "id_usuario": "2717",
+      "ativas": "4",
+      "faladas": "6",
+      "potencial": "0",
+      "nao_convertida": "10"
+    },
+    {
+      "id_usuario": "5164",
+      "ativas": "156",
+      "faladas": "436",
+      "potencial": "0",
+      "nao_convertida": "569"
+    },
+    {
+      "id_usuario": "5165",
+      "ativas": "1",
+      "faladas": "3",
+      "potencial": "0",
+      "nao_convertida": "4"
+    },
+    {
+      "id_usuario": "5166",
+      "ativas": "1",
+      "faladas": "1",
+      "potencial": "0",
+      "nao_convertida": "2"
+    },
+    {
+      "id_usuario": "5167",
+      "ativas": "3",
+      "faladas": "0",
+      "potencial": "0",
+      "nao_convertida": "3"
+    }
+  ],
+  "statusLeads": [
+    {
+      "id_usuario": "24",
+      "total_clientes": "8973",
+      "total_finalizados": "8706",
+      "total_agendados": "46",
+      "total_acumulados": "219"
+    },
+    {
+      "id_usuario": "26",
+      "total_clientes": "5676",
+      "total_finalizados": "5552",
+      "total_agendados": "32",
+      "total_acumulados": "92"
+    },
+    {
+      "id_usuario": "1683",
+      "total_clientes": "263",
+      "total_finalizados": "249",
+      "total_agendados": "5",
+      "total_acumulados": "9"
+    },
+    {
+      "id_usuario": "2205",
+      "total_clientes": "406",
+      "total_finalizados": "332",
+      "total_agendados": "1",
+      "total_acumulados": "73"
+    },
+    {
+      "id_usuario": "3270",
+      "total_clientes": "427",
+      "total_finalizados": "94",
+      "total_agendados": "330",
+      "total_acumulados": "3"
+    },
+    {
+      "id_usuario": "5164",
+      "total_clientes": "4181",
+      "total_finalizados": "2644",
+      "total_agendados": "419",
+      "total_acumulados": "1113"
+    },
+    {
+      "id_usuario": "5165",
+      "total_clientes": "2922",
+      "total_finalizados": "2303",
+      "total_agendados": "298",
+      "total_acumulados": "321"
+    },
+    {
+      "id_usuario": "5166",
+      "total_clientes": "3943",
+      "total_finalizados": "2798",
+      "total_agendados": "159",
+      "total_acumulados": "986"
+    },
+    {
+      "id_usuario": "5167",
+      "total_clientes": "4364",
+      "total_finalizados": "2921",
+      "total_agendados": "10",
+      "total_acumulados": "1433"
+    },
+    {
+      "id_usuario": "6518",
+      "total_clientes": "2307",
+      "total_finalizados": "1360",
+      "total_agendados": "12",
+      "total_acumulados": "935"
+    }
+  ],
+  "cadastroMatricula": [
+    {
+      "id_usuario": "6",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "24",
+      "cadastros": "1",
+      "matriculas": "2"
+    },
+    {
+      "id_usuario": "25",
+      "cadastros": "2",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "26",
+      "cadastros": "7",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "27",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "42",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "1047",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "1353",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "1354",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "1577",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "1683",
+      "cadastros": "1",
+      "matriculas": "1"
+    },
+    {
+      "id_usuario": "2011",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "2178",
+      "cadastros": "12",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "2189",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "2205",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "2207",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "2717",
+      "cadastros": "1",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "3270",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "5164",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "5165",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "5166",
+      "cadastros": "1",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "5167",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "6510",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "6515",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "6517",
+      "cadastros": "0",
+      "matriculas": "0"
+    },
+    {
+      "id_usuario": "6518",
+      "cadastros": "0",
+      "matriculas": "0"
+    }
+  ]
+}
