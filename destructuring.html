@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> JavaScript </title>
+</head>
+<body>
+<h1> Destructuring </h1>
+
+<p> Exemplo1: </p>
+<p> 
+  No exemplo abaixo, 
+  as duas propriedades de event são colocadas nas variáveis criadas. 
+</p>
+<pre>
+  const {clientX, clientY} = event;
+</pre>
+
+<button onclick="movimento(event)"> Ver Posicao </button>
+<hr>
+
+<p> Exemplo 2, com array </p>
+<p> No exemplo abaixo, estou usando [] </p>
+<textarea style="width:100%">
+const colors = ['red', 'pink', 'blue'];
+const [cor1, cor2, cor3] = colors;
+</textarea>
+
+
+<hr>
+
+<form name="fmOne" id="fmOne" method="POST" action="sorte.html">
+  <p><input type="text" id="cidade" name="cidade" value="gravata"> </p>
+  <p><button id="btExecutar" name="btExecutar"> Executar </button> </p>
+</form>
+
+<script>
+  function movimento(event){
+    const {clientX, clientY} = event;
+    console.log('x: ', clientX);
+    console.log('y: ', clientY);
+  }
+  // document.movimento(event);
+  // ler form
+  const meuFm = document.getElementById('fmOne');
+  console.log('fm: ', meuFm);
+
+  // exemplo 2 :
+  // uso com array
+  const colors = ['red', 'pink', 'blue'];
+  const [cor1, cor2, cor3] = colors;
+  console.log('primeira cor: ', cor1);
+  // 
+  // const chato = item => item * 2;
+
+
+</script>
+
+
+</body>
+</html>
