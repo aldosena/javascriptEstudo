@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/img/n10.ico">
   <title> JavaScript </title>
 </head>
 <body>
@@ -35,6 +36,10 @@ const [cor1, cor2, cor3] = colors;
   <p><button id="btExecutar" name="btExecutar"> Executar </button> </p>
 </form>
 
+<img id="bird" src="img/bird.gif" alt="bird" width="40" height="30">
+
+<p><button type="button" id="btLer" name="btLer" onclick="lerBird()"> Ler imagem </button></p>
+
 <script>
   function movimento(event){
     const {clientX, clientY} = event;
@@ -54,6 +59,13 @@ const [cor1, cor2, cor3] = colors;
   // 
   // const chato = item => item * 2;
 
+  function lerBird(){
+    const xBird = document.querySelector("#bird");
+    console.log('b:', xBird);
+    console.log('w: ', xBird.width);
+    console.log('tipo: ', typeof(xBird));
+    xBrid.
+  }
 
 </script>
 
