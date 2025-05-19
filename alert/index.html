@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">    
+  <title> Documento de Alerta </title>
+</head>
+<body>
+
+<h3> <a href="./../index.html"> Principal </a> </h3>  
+
+
+<p><button type="button" class="button is-link" onclick="avisoFeliz()"> Feliz </button></p>
+
+
+
+<hr>
+<h4> Explicação </h4>
+
+<p> 
+  O arquivo JS que exporta: <br>
+  Tem que ter o nome export no começo <br>
+</p>
+
+<textarea name="message" style="width:100%; height:100px;">
+  export class MinhaClasse{
+    static minhaFuncao(){
+      console.log("boa sorte");
+    }  
+  }
+</textarea>
+<br>
+
+<p> O arquivo que importa usa o modelo abaixo: </p>
+<textarea name="message" style="width:100%; height:100px;">
+  import { MinhaClasse } from "./minha_classe.js";
+  ... ...
+  MinhaClasse.minhaFuncao();
+</textarea>
+<br>
+
+<p> O arquivo php ou .html que chama o js usa a palavara module </p>
+<textarea name="message" style="width:100%; height:100px;">
+  Esta é a form acorreta de fazer a chamada:
+  <*script* type="module" src="./script.js"></* script>
+</textarea>
+
+<p><button type="button" class="button is-danger" onclick="avisoTriste()"> Triste </button></p>
+
+<script type="module" src="./script.js"></script>
+
+</body>
+</html>
