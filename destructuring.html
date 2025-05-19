@@ -63,9 +63,31 @@ const [cor1, cor2, cor3] = colors;
     const xBird = document.querySelector("#bird");
     console.log('b:', xBird);
     console.log('w: ', xBird.width);
-    console.log('tipo: ', typeof(xBird));
-    xBrid.
+    console.log('tipo do bird: ', typeof(xBird));
+    //const {width} = xBrid;
+    // console.log('width:', width);
+    // xBrid.
   }
+
+  function lerCorpo(){
+    const myB = document.body;
+    console.log('t:', typeof(myB));
+    console.log('b:', myB);
+    // const tamanho = myB.clientWidth;
+    // console.log('tamanho', tamanho);
+    // const a = myB.clientHeight    
+    const {clientWidth, clientHeight} = myB;
+    console.log('cw:', clientWidth);
+    console.log('tipo do cw:', typeof clientWidth);
+    console.log('altura:', clientHeight);
+  }
+
+  function ini(){
+    lerBird(); 
+    lerCorpo();
+  }
+
+  ini();
 
 </script>
 
