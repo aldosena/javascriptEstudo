@@ -18,3 +18,4 @@ export class myAlert {
     this.alert.innerHTML = message;
     this.alert.style.display = "block";
   }
+}
