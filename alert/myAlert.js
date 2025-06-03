@@ -14,7 +14,7 @@ export class myAlert {
     document.body.appendChild(this.alert);
   }
 
-  show(xstatus, xmessage) {
+  show(xstatus, xmessage, xtime=0) {
     if (xstatus){
           this.alert.style.backgroundColor = "#3cb371"; // green
     }else{
@@ -22,6 +22,8 @@ export class myAlert {
     };
     this.alert.innerHTML = xmessage;
     this.alert.style.display = "block";
-    setTimeout(() => this.alert.style.display = "none", 3000);
+    if (xtime > 0){
+        setTimeout(() => this.alert.style.display = "none", (xtime * 3000));
+    };    
   }
 }
