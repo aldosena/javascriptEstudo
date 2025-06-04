@@ -1,17 +1,13 @@
 function reconhecer(button) {
-  const codigoUser = button.getAttribute("data-user-id");
-  console.log("cod. via get:", codigoUser);
-  const esteBotao = button.getAttribute('data-my-id');
-  console.log('este: ', esteBotao);
-  //
-  const codigoUsuario = button.dataset.userId;
-  console.log("cod. usuario: ", codigoUsuario);
+  //const xbotao = button;
+  const id_do_botao = button.id;
+  console.log('id do botao', id_do_botao);
   const meuTransporte = button.dataset.userTransporte;
   console.log("transporte", meuTransporte);
-  mudarCor(esteBotao);
+  mudarTrans(id_do_botao);
 }
 
-function mudarCor(esteBt) {
+function mudarTrans(esteBt) {
   console.log('este id:', esteBt);
   let alvo = document.getElementById(esteBt);
   alvo.setAttribute('data-user-transporte', 'cavalo');
