@@ -2,7 +2,8 @@ function reconhecer(button) {
   //const xbotao = button;
   const id_do_botao = button.id;
   console.log('id do botao', id_do_botao);
-  const meuTransporte = button.dataset.userTransporte;
+  // const meuTransporte = button.dataset.userTransporte;
+  const meuTransporte = button.getAttribute('data-user-transporte');
   console.log("transporte", meuTransporte);
   mudarTrans(id_do_botao);
 }
