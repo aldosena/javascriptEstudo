@@ -6,20 +6,40 @@
   <title> Javascript </title>
 </head>
 <body>
+  <p><a href="index.html"> Index </a></p>
+
 <h1> Funções </h1>
 
 <p> Como criar função</p>
-<p> Como usar a função</p>
+
+<ul>
+  <li> Reguar function </li>  
+  <li> Named function  </li>
+  <li> Arrow function </li> 
+</ul>
+
 
 <script>
+  // regular 
+  function reg_dobro(n){
+      let r = n * 2;
+      console.log('regular: ', r);
+  };
+  // named
+  const named = function (n){
+    let r = n * 2;
+    console.log('named: ', r);
+  };
+  // arrow
+  const Adob = (n)=> {
+    let r = n * 2;
+    console.log('arrow: ', r);
+  };
 
-  function gravidade(){
-    //console.log('a lei da gravidade');
-    alert('a lei da gravidade');
-  }
   // para executar o código
-  gravidade();
-
+  reg_dobro(10);
+  named(20);
+  Adob(30);
 </script>
 
 </body>
