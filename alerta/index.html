@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./style.css" rel="stylesheet">
+  <title> Documento de Alerta </title>
+</head>
+<body>
+
+<h3> <a href="./../index.html"> Principal </a> </h3>  
+
+<div id="main-alert" class="aviso"> </div>  
+
+<h1> Quero um alerta aqui </h1>
+<div class="card bg-success text-white">
+  <div class="card-body"><h2> Success card </h2></div>
+</div>
+
+<button type="button" class="btn btn-primary" onclick="exibir()"> Exibir </button>
+<button type="button" class="btn btn-primary" onclick="carregar()"> Carregar </button>
+<button type="button" class="btn btn-primary" onclick="sumir()"> Sumir </button>
+<button type="button" class="btn btn-primary" onclick="sumirAgora()"> Sumir Agora </button>
+
+<br>
+<button type="button" class="btn btn-primary" onclick="avisoAlerta('vc está sendo filmado')"> Perigo </button>
+
+
+<hr>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+  Open modal
+</button>
+<hr>
+
+<p class="aviso"> Aviso 1 </p>
+<p id="aviso"> Aviso 2 </p>
+
+<p> 
+  O arquivo que exporta:
+  tem que ter o nome export no começo <br>
+
+</p>
+
+<textarea name="message" style="width:100%; height:100px;">
+  export class MinhaClasse{
+    static minhaFuncao(){
+      console.log("boa sorte");
+    }
+  
+  }
+</textarea>
+<br>
+
+<p> O arquivo que importa usa o modelo abaixo: </p>
+<textarea name="message" style="width:100%; height:100px;">
+  import { MinhaClasse } from "./minha_classe.js";
+  MinhaClasse.minhaFuncao();
+</textarea>
+<br>
+
+<p> O arquivo php ou .html que chama o js usa a palavara module </p>
+<textarea name="message" style="width:100%; height:100px;">
+  Esta é a form acorreta de fazer a chamada:
+  <i> script type="module" src="script.js"> script </i>
+</textarea>
+
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<script type="module" src="./script.js"></script>
+
+</body>
+</html>

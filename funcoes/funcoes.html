@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Javascript </title>
+</head>
+<body>
+<h1> Funções </h1>
+
+<p><a href="./../index.html"> Menu Principal </a> </p>
+<p><a href="tamanho.html"> Tamanho da String </a> </p>
+<p><a href="dobro.html"> O dobro de um numero </a> </p>
+
+<p> Regular Function </p>
+<pre>
+function gravidade(){
+  console.log('a lei da gravidade');
+};
+gravidade();
+</pre>
+<hr>
+
+<p> Arrow Function </p>
+<pre>
+  const maiuscula = (texto) =>{
+    return texto.toUppercase();
+  }
+</pre>
+
+<script>
+  function gravidade(){
+    console.log('a lei da gravidade');
+  }
+  // para executar o código
+  gravidade();
+
+  // arrow function 
+  const maiuscula = (texto) =>{
+    const r = texto.toUpperCase(); 
+    return r;
+  }
+  console.log('r: ', maiuscula('recife'));
+  
+</script>
+
+</body>
+</html>

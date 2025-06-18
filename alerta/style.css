@@ -1,0 +1,15 @@
+.aviso{
+  color : tomato;
+}
+
+.azul{
+  color : blue;
+} 
+
+#main-alert {
+  position: absolute;
+  right: 2em;
+  top: 4em;
+  z-index: 5000;
+  background-color: yellow;
+}
