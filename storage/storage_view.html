@@ -6,14 +6,14 @@
   <title>Document</title>
 </head>
 <body>
-  <p><a href="index.html"> index </a></p>
+  <p><a href="./../index.html"> index </a></p>
   <p><a href="storage.html"> localStorage </a></p>
-  
-  <h1> Setar um valor </h1>
-
+    
+  <h1> Ver o conctúdo do localstorage </h1>
 
   <script>
-    localStorage.setItem('marca', 'profissionalizante');
+    let nossaMarca = localStorage.getItem('marca');
+    console.log(nossaMarca);
   </script>
 </body>
 </html>

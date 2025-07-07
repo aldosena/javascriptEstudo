@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Document </title>
+</head>
+<body>
+
+<h3> <a href="../index.html"> Janela Principal </a> </h3>  
+
+<h3> Tabela 1 - tentando ler o tbody </h3>  
+  <table id="tabCidade">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tdoby>
+        
+    </tdoby>
+  </table>
+
+<h3> Tabela 2 - tentando ler o tbody </h3>  
+  <table id="grau"></table>
+
+<h3> Label com a Lista de Cidades </h3>  
+  <p id="cid"> </p>
+
+<script>  
+let cidades = [
+  {nome: 'Recife', estado: 'PE'},
+  {nome: 'Salvador', estado: 'BA'},
+  {nome: 'Fortaleza', estado: 'CE'}
+  ];
+  console.log(cidades);
+  let tbody = document.querySelector('#tabCidade tbody');
+  console.log('tbody: ', tbody);
+  let foco = document.querySelector('#cid');
+  let grau = document.querySelector('#grau');
+
+  tbody.innerHTML += `<tr>
+        <td> O bem </td>
+        <td> O mal </td>
+      </tr>`;
+
+  cidades.forEach((item) =>{
+      // console.log('laço');
+      //tbody.innerHTML += `<tr>
+      //  <td> ${item.nome} </td>
+      //  <td> ${item.estado} </td>
+      //</tr>`;
+      //
+      foco.innerHTML += `* ${item.nome} -  ${item.estado} </br>`;
+      grau.innerHTML += `<tr>
+        <td> ${item.nome} </td>
+        <td> ${item.estado} </td>
+        </tr>`;
+  });  
+  // ------------------
+  let valor = localStorage.getItem('marca');
+  console.log('M: ', valor);
+  </script>
+
+</body>
+</html>
