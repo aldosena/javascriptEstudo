@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rest - Spread </title>
+</head>
+<body>
+<!-- menu  -->
+<p><a href="index.html"> Index </a></p>
+
+<h2> Rest - Spread </h2>
+
+<h3> REST </h3>
+
+<p> Exemplo 1: Rest </p>
+<p> O operador rest é usado para agrupar argumentos em um array. </p>
+<p> Repare que a variável titulo recebe a string, mas todos os outros parametros são salvos na variável numeros, que passa a ser uma string </p>
+<p>Se o último argumento nomeado de uma função tiver prefixo com ..., ele irá se tornar um array </p>
+
+<textarea style="width:100%">
+function soma(titulo, ...numeros) {
+  let total = 0;
+  for (let numero of numeros) {
+    total += numero;
+  }
+  return total;
+}
+console.log(soma("Somar", 1, 2, 3, 4, 5)); // Saída: Soma: 15
+</textarea>
+
+<h3> spread	</h3>
+
+<p> 
+Serve para pegar um array e "espalhar" os dados. <br> 
+Usando onde, por exemplo, um array não pode ser lido <br>
+No exemplo abaixo, array não seria permitido 
+</p>
+
+<pre>
+const numeros = [1,2,3];
+console.log(Math.max(...numeros));
+</pre>
+
+
+<p> Objeto clonado </p>
+
+<pre>
+const carro = {cor: "azul", protas: 4, ano: 2020 }; // ojbeto
+const cloneCarro = {...carro, turbo: true};
+</pre>
+
+
+
+<p> Fonte1: <a href="https://www.youtube.com/watch?v=8xgqEBE1SKI&list=PL9rc_FjKlX39T78CUANwmdta_d1CgUtMt&index=4"> Youtube </a> </p>
+<p> Fonte2: <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/rest_parameters"> MDN </a> </p>
+
+</body>
+</html>
