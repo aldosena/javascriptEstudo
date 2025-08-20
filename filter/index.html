@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<h1> FILTER - Estudo do JavaScript</h1>
+<p> Abra o console para ver as mudanças </p>
+
+<script>
+  // Exemplo de código JavaScript
+  console.log("Bem-vindo ao estudo de JavaScript!");  
+  const diversos = ["maçã", "R$ 100", "banana", "R$ 200", "laranja", "R$ 77", "uva", "abacaxi"]; 
+  // criar um novo array com valores
+  let soValores = diversos.filter(function(item){
+      //return item.startsWith("R$");
+      return item.includes("R$");
+  });
+  console.log('so valores: ', soValores);
+  // começando om r$
+  let valoresCifrao = diversos.filter(function(item){
+    return item.startsWith("R$");
+  });
+  console.log('valores com cifrão: ', valoresCifrao);
+
+  function tamanho_da_string(palavra){
+    return palavra.length;  
+  }
+  // exibir apenas strings com menos de 5 caracteres
+  let pequenos = diversos.filter(function(item){
+    return tamanho_da_string(item) < 5;
+  });
+  console.log('strings com menos de 5 caracteres: ', pequenos);
+
+</script>
+
+</body>
+</html>
