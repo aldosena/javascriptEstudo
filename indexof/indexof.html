@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estudo do Javascript </title>
+</head>
+<body>
+    <p><a href="../index.html"> Index </a></p>  
+
+    <h1> indexof </h1>
+    <h2> para array e string </h2>
+    <p> Quando nao é encontado, o retorno é ( -1) </p>
+
+<textarea style="width:100%; height:120px;">
+    const numeros = [1, 10, 5, 4, 6, 7, 10, 7, 1, 3, 4, 5, 7];
+    const n = 7;
+    console.log(numeros);
+    const achei = numeros.indexOf(n);
+    console.log('Quero 7, posicao no array', achei);
+    const ultimo = numeros.lastIndexOf(n);
+    console.log('posicao do ultimo encontrado:', ultimo);
+</textarea>    
+
+
+<script>
+    const numeros = [1, 10, 5, 4, 6, 7, 10, 7, 1, 3, 4, 5, 7];
+    const n = 7;
+    console.log(numeros);
+    const achei = numeros.indexOf(n);
+    console.log('Quero 7, posicao no array', achei);
+    const ultimo = numeros.lastIndexOf(n);
+    console.log('posicao do ultimo encontrado:', ultimo);
+</script>    
+
+<h2> Pegar o último válido </h2>
+
+<textarea style="width:100%; height:120px;">
+    const frase = "Todos os x dias são iguais exceto os dias diferente";
+    const le = "x";
+    console.log(frase);
+    const x_achei = frase.indexOf(le);
+    console.log('posicao de', le, ' é: ', x_achei);
+    const x_ultimo = frase.lastIndexOf(le);
+    console.log('posicao do ultimo encontrado:', x_ultimo);
+</textarea>    
+
+<script>
+    const frase = "Todos os x dias são iguais exceto os dias diferente";
+    const le = "x";
+    console.log(frase);
+    const x_achei = frase.indexOf(le);
+    console.log('posicao de', le, ' é: ', x_achei);
+    const x_ultimo = frase.lastIndexOf(le);
+    console.log('posicao do ultimo encontrado:', x_ultimo);
+</script>    
+
+</body>
+</html>
