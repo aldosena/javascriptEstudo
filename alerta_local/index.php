@@ -24,5 +24,6 @@
 
 <div id="alert-down">fim </div>  
   
+<script type="module" src="./script.js"></script>
 </body>
 </html>
