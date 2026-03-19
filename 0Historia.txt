@@ -1,0 +1,23 @@
+javascript;
+Tenho um array: 
+CARROS = ['A', 'B', 'C', 'D'];
+E outro array:
+MOTOS = ['Z', 'B', 'Y', 'K']
+Quero colocar os elementos MOTOS em CARROS mas nao quero que se repitam;
+
+
+<select id="cargo" name="cargo"> 
+<option value="2,Coordenador">Coordenador </option>
+<option value="3,Comercial">Comercial</option>
+</select>
+
+
+usando a persona de um dev full stack senior realize:
+dentro do arquivo op.html
+eu quero:
+javascript;
+Quer pegar o "value" e o texto do "select" escolho em minha página;
+<select id="cargo" name="cargo"> 
+<option value="2">Coordenador </option>
+<option value="3">Comercial</option>
+</select>

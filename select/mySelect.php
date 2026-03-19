@@ -40,9 +40,9 @@
     <label for="city"> Cidade:</label> <br>
     <select id="city" name="city[]" class="form-control js-example-basic-multiple" multiple="multiple">
       <option value="RECIFE">Recife </option>
-      <option value="OLINDA"> Olinda </option>
+	  <option value="OLINDA"> Olinda </option>
       <option value="GRAVATA" selected> Gravatá </option>
-      <option value="JABOATAO"> Jaboatão </option>
+	  <option value="JABOATAO" selected> Jaboatão </option>
     </select>
   </p>
   <p><button type="submit" class="btn btn-primary">Inserir </button> </p>

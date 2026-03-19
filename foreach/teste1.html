@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2> Forach </h2>
+
+<h3> <a href="../index.html"> Janela Principal </a> </h3>  
+
+<script>
+    const carros = ['Ford', 'Fiat', 'Honda'];
+    carros.forEach(function(item){
+        console.log('item: ', item);
+    });
+
+const perguntas = [
+  {
+    "Numero": 1,
+    "Titulo": "Eu sou...",
+    "Itens": [
+      "I - Idealista, criativo e visionário",
+      "C - Divertido, espiritual e benéfico",
+      "O - Confiável, meticuloso e previsível",
+      "A - Focado, determinado e persistente"
+    ]
+  },
+  {
+    "Numero": 2,
+    "Titulo": "Eu gosto de...",
+    "Itens": [
+      "A - Ser piloto",
+      "C - Conversar com os passageiros",
+      "O - Planejar a viagem",
+      "I - Explorar novas rotas"
+    ]
+  }
+];  
+
+perguntas.forEach(function(pergunta){
+    console.log('pergunta: ', pergunta.Titulo);
+    pergunta.Itens.forEach(function(item){
+        console.log('item: ', item);
+    });
+});
+
+
+const regioes = [{"norte": "ne"}, {"sul": "sl"}, {"leste": "lt"}, {"oeste": "os"}];
+
+// exibir a sigla do norte
+console.log('sigla do norte:', regioes[0].norte);
+
+regioes.forEach((sigla)=>{
+    console.log('sigla: ', sigla);
+});
+
+//console.log('sigla do norte:', regioes.norte);
+
+
+regioes.forEach((reg)=>{
+    console.log('regiao: ', reg);
+});
+
+</script>
+</body>
+</html>
